@@ -99,7 +99,7 @@ def login_user(user_id, password):
     conn.close()
 
     if user:
-        if hash_password(password) == user["password"\]:
+        if hash_password(password) == user["password"]:
             return user
 
     return None
